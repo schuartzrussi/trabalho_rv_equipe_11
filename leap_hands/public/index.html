@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.6.0/aframe-master.js"></script>
+    <script src="//unpkg.com/aframe-leap-hands/dist/aframe-leap-hands.umd.js"></script>
+
+    <title>Leap hands</title>
+</head>
+<body>
+    <a-scene>
+        <a-entity camera="near: 0.01" look-controls position="0 1.5 0">
+            <a-entity leap-hand="hand: left"></a-entity>
+            <a-entity leap-hand="hand: right"></a-entity>
+        </a-entity>
+      </a-scene>
+</body>
+</html>
